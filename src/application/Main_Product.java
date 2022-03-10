@@ -17,6 +17,11 @@ public class Main_Product {
         double price = sc.nextDouble();
         Product product = new Product(name, price);
 
+        product.setName("Computador");
+        System.out.println("Dados atualizados: " + product.getName());
+        product.setPrice(1200.00);
+        System.out.println("Dados atualizados: " + product.getPrice());
+
         System.out.println("\nDados do produto: " + product);
         System.out.print("\nInsira a quantidade de produtos a serem adicionados em estoque: ");
         int quantity = sc.nextInt();
